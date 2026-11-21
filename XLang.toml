@@ -1,0 +1,8 @@
+[package]
+id = "github.com/xespirit/xtestlib"
+name = "xtestlib"
+version = "0.1.0"
+
+[library]
+namespace = "xtestlib"
+source-root = "src"

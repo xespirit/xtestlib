@@ -1,0 +1,19 @@
+pub module xtestlib
+
+/// Adds the signed integers left and right and returns their sum.
+pub fn add(left i32, right i32) i32 {
+    println "called library method"
+    return left + right
+}
+
+test addsSignedIntegers {
+    const {
+        Left = 20
+        Right = 22
+        ExpectedSum = 42
+    }
+
+    let actual = add(Left, Right)
+
+    assert actual == ExpectedSum
+}
